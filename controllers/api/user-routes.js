@@ -93,7 +93,7 @@ router.post("/login", (req, res) => {
   });
 });
 
-/ PUT /aip / users / 1;
+// / PUT /aip / users / 1;
 router.put("/:id", (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
 
@@ -117,7 +117,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
-/ PUT /aip / users / 1;
+// / PUT /aip / users / 1;
 router.put("/:id", (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
 
