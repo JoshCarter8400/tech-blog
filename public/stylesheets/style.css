@@ -77,11 +77,17 @@ form label {
   flex-direction: column;
 }
 
+.heading {
+  text-align: center;
+  font-size: 36px;
+  color: #225ca3;
+}
+
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   padding: 0 1%;
 }
 
