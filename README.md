@@ -20,5 +20,5 @@ You can visit the site as guest and see posts but not comment on posts or post a
 posts, make your own posts, delete your posts, and have your personal dashboard to veiw and edit your posts. 
 
 
-(blog-mvc.png)
+(../public/stylesheets/images/blog-mvc.png)
 
