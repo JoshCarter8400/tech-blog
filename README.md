@@ -9,4 +9,4 @@ This is a fullstack application that allows user to post their thoughts and opin
 * Sequelize
 * Express.js and Expresss-session
 
-## Application can be deployed at this link: (https://rocky-cove-83154.herokuapp.com/)
+## Application can be deployed here: [Post your blogs here](https://rocky-cove-83154.herokuapp.com/)
