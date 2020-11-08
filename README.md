@@ -1,5 +1,5 @@
 # public-blog-area
-This is a fullstack application that allows user to post their thoughts and opinions through their personal blog post on a CMS style website. This project follows the Model View Controller architecture.
+This is a fullstack application that allows user to post their thoughts and opinions through their personal blog post on a CMS style website. This project follows the Model View Controller paradigm.
 
 ## Tools and languages used
 * Handlebars.js
