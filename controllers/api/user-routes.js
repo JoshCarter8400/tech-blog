@@ -70,27 +70,27 @@ router.post("/", (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-  console.log("New President");
+  // findOne method by email to look for an existing user in the database with the email address entered
   // expects {email: 'lernantino@gmail.com', password: 'password1234'}
   User.findOne({
     where: {
       email: req.body.email,
     },
   }).then((dbUserData) => {
+    // if the email is not found, return an error
     if (!dbUserData) {
       res.status(400).json({ message: "No user with that email address!" });
       return;
     }
-
-    // res.json({ user: dbUserData });
-
-    // Verify user
+    // Otherwise, verify the user.
+    // call the instance method as defined in the User model
     const validPassword = dbUserData.checkPassword(req.body.password);
+    // if the password is invalid (method returns false), return an error
     if (!validPassword) {
       res.status(400).json({ message: "Incorrect password!" });
       return;
     }
-
+    // otherwise, save the session, and return the user object and a success message
     req.session.save(() => {
       // declare session variables
       req.session.user_id = dbUserData.id;
